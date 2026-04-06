@@ -55,10 +55,3 @@ Role: Frontend Developer & Online Academy Lead
 ├── style.css       # Custom styling and responsiveness
 └── script.js       # API fetching and dynamic rendering logic
 ---
-
-🧑‍💻 Developed By
-Bilal Qadir
-
-GitHub: @BilalQadir247
-
-Role: Frontend Developer & Online Academy Lead
