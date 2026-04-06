@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+nav{
+   background-color: rgb(62, 70, 70);  
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   padding: 10px;
+}
+nav h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 5px 2px green;
+}
+form input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    outline: none;
+    border: none;
+}
+form button{
+    outline: one;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    transition: 0.3 ease-in-out;
+    background-color: rgba(192, 16, 16, 0.883);
+}
+form button:hover{
+   cursor: pointer;
+   background-color: red;
+}
+
+main section h2{
+    text-align: center;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+}
+main section{
+    background-color: rgba(0, 0, 0, 0.266);
+}
+#recipr-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.recipediv{
+   flex: 1 1 250px;
+    max-width: 350px; 
+    height: auto; 
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 3px grey;
+
+}
+
+.recipediv img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.recipediv h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgba(183, 13, 13, 0.575);
+} 
+.recipediv p{
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+    
+}
+.recipediv button{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    margin-left: 15%;
+    margin-top: 12px;
+    outline: none;
+    border: 1px solid rgba(177, 142, 142, 0.397);
+    border-radius: 5px;
+    color: white;
+    transition: 0.3 ease-in-out;
+    background-color: rgba(192, 16, 16, 0.883);
+}
+.recipediv button:hover{
+   cursor: pointer;
+   background-color: red;
+}
+
+.recipe-deatils{
+    opacity: 0;
+    position: fixed;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, 50%);
+    background-color: #694c2f;
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*scrollbar-width: ;  options: auto, thin, none */
+    scrollbar-color: grey #694c2f;
+}
+.recipe-deatils::-webkit-scrollbar {
+    width: 12px;
+}
+.recipe-deatils button{
+     width: 60px;
+     height: 40px;
+     background-color: transparent;
+     color: black;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     font-size: 20px;
+     font-weight: 700;
+    position: relative;
+    left: 88%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.266);
+}
+
+.recipe-deatils h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.recipe-deatils h3{
+    padding: 10px;
+
+}
+
+.recipe-deatils ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.recipe-deatils div p{
+    padding: 10px;
+
+}
+
+
+@media (max-width: 1024px) {
+    .recipediv {
+        flex: 1 1 40%; /* Ek line mein 2 cards */
+    }
+    .recipe-deatils {
+        width: 70%; /* Modal thoda bada dikhega */
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .recipediv {
+        flex: 1 1 90%; 
+        width: 90%;
+    }
+
+    .recipe-deatils {
+        width: 95%; 
+        height: 80%;
+        top: 50%; 
+    }
+    
+    .recipe-deatils button {
+        left: 80%; 
+    }
+}
