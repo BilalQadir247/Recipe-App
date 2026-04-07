@@ -193,4 +193,9 @@ body{
     .recipe-deatils button {
         left: 80%; 
     }
+    .recipe-deatils{
+        width: 80%;
+        height: 50%;
+        top: 0%;
+    }
 }
